@@ -22,9 +22,15 @@ and near-exact duplicates are kept within one partition.
 
 ## Use
 
-FRD is used for training, validation, and testing. OpSpam and
-AiGen-FoodReview are used only zero-shot: no training, threshold, scaler, or
-ensemble decision uses them.
+FRD is used for training, validation, and testing. In the reported results,
+OpSpam and AiGen-FoodReview are used only zero-shot: no training, threshold,
+scaler, or ensemble decision uses them. OpSpam is the supplementary external
+test reported in the limitations of the paper, and AiGen-FoodReview is the
+external benchmark.
+
+`FRD_Run_Transformer_Study.py` also reads `deceptive-opinion.csv` when it
+creates the data splits, and it runs OpSpam fine-tuning tasks that are not
+used in the paper; their outputs are not included in `results/`.
 
 ## References
 
