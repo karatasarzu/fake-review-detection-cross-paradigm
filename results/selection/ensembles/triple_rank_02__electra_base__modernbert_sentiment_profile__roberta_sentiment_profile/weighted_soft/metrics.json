@@ -1,0 +1,78 @@
+{
+  "model": "triple_rank_02__electra_base__modernbert_sentiment_profile__roberta_sentiment_profile",
+  "method": "weighted_soft",
+  "seed": 42,
+  "selected_threshold": 0.5441121394952305,
+  "validation_default": {
+    "accuracy": 0.986396240415533,
+    "precision": 0.9842364532019704,
+    "recall": 0.9886194952993568,
+    "f1": 0.9864231054060726,
+    "roc_auc": 0.9990338830998551,
+    "pr_auc": 0.9990353881801802,
+    "specificity": 0.9841740850642928,
+    "balanced_accuracy": 0.9863967901818248,
+    "mcc": 0.9728021503764563,
+    "fpr": 0.01582591493570722,
+    "fnr": 0.011380504700643246,
+    "tn": 1990,
+    "fp": 32,
+    "fn": 23,
+    "tp": 1998,
+    "threshold": 0.5
+  },
+  "test_default": {
+    "accuracy": 0.9860252287905021,
+    "precision": 0.9854212997281937,
+    "recall": 0.9866402770905492,
+    "f1": 0.9860304116701694,
+    "roc_auc": 0.9990548670218884,
+    "pr_auc": 0.9990600722700315,
+    "specificity": 0.9854104846686449,
+    "balanced_accuracy": 0.9860253808795971,
+    "mcc": 0.9720512077676075,
+    "fpr": 0.014589515331355093,
+    "fnr": 0.013359722909450767,
+    "tn": 3985,
+    "fp": 59,
+    "fn": 54,
+    "tp": 3988,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9859015582488251,
+    "precision": 0.9866204162537165,
+    "recall": 0.9851558634339436,
+    "f1": 0.985887595939589,
+    "roc_auc": 0.9990548670218884,
+    "pr_auc": 0.9990600722700315,
+    "specificity": 0.9866468842729971,
+    "balanced_accuracy": 0.9859013738534703,
+    "mcc": 0.9718041745718736,
+    "fpr": 0.013353115727002967,
+    "fnr": 0.014844136566056407,
+    "tn": 3990,
+    "fp": 54,
+    "fn": 60,
+    "tp": 3982,
+    "threshold": 0.5441121394952305
+  },
+  "meta": {
+    "members": [
+      "electra_base",
+      "modernbert_sentiment_profile",
+      "roberta_sentiment_profile"
+    ],
+    "weights": {
+      "electra_base": 0.15,
+      "modernbert_sentiment_profile": 0.45,
+      "roberta_sentiment_profile": 0.4
+    },
+    "protocol": "frd",
+    "selection_data": "validation_only",
+    "triple_rank": 2,
+    "weight_search_step": 0.05,
+    "method": "weighted_soft",
+    "selected_threshold": 0.5441121394952305
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "time": "2026-09-17T16:13:26+00:00",
+  "source": "saved_artifact_inference_only",
+  "supervisor_version": "1.1.0",
+  "inference_precision": "fp32",
+  "inference_batch_size": 1,
+  "inference_seconds": 350.249102,
+  "legacy_notes": [
+    "Outputs reconciled using existing weights and original metrics/threshold functions.",
+    "Earlier standalone training settings remain legacy; do not assume identical training protocol.",
+    "No claim that initialization seed was set before the earlier model/head was created."
+  ],
+  "prior_resource": {
+    "profile": "full_primary",
+    "micro_batch": 2,
+    "gradient_accumulation": 8,
+    "effective_batch": 16,
+    "adaptation": "full",
+    "precision": "fp32",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_length": 256,
+    "max_epochs": 5,
+    "train_seconds": 3054.5216712,
+    "global_step": 3534,
+    "best_model_checkpoint": "<project>\\results\\models\\frd\\seed_42\\deberta_v3_base\\full_primary\\checkpoints\\checkpoint-2356",
+    "best_metric": 0.9779757485770848,
+    "final_epoch": 1.9977388355002828,
+    "peak_vram_gb": 3.74832820892334,
+    "peak_reserved_vram_gb": 4.248046875
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "n_reviews": 8086,
+  "subset": false,
+  "systems": {
+    "modernbert_base": {
+      "threshold": 0.28302879089934707,
+      "inference": {
+        "device": "cpu",
+        "batch_size": 4,
+        "seconds": 1198.6485513
+      },
+      "max_abs_prob_diff": 0.24527446776579953,
+      "mean_abs_prob_diff": 0.0003924363457876798,
+      "p99_abs_prob_diff": 0.0012541534980328095,
+      "label_changes_at_threshold": 2,
+      "accuracy_stored_gpu": 0.9823151125401929,
+      "accuracy_cpu": 0.9825624536235469,
+      "roc_auc_stored_gpu": 0.9985351020026616,
+      "roc_auc_cpu": 0.9985349184698158,
+      "spearman_gpu_vs_cpu": 0.9974585787117263
+    },
+    "modernbert_sentiment_profile": {
+      "threshold": 0.02106755665214396,
+      "inference": {
+        "device": "cpu",
+        "batch_size": 4,
+        "seconds": 1203.6012198
+      },
+      "max_abs_prob_diff": 0.2529734997372711,
+      "mean_abs_prob_diff": 0.0002606073511474771,
+      "p99_abs_prob_diff": 0.0004341304181009197,
+      "label_changes_at_threshold": 2,
+      "accuracy_stored_gpu": 0.9831808063319317,
+      "accuracy_cpu": 0.9831808063319317,
+      "roc_auc_stored_gpu": 0.9984194151322097,
+      "roc_auc_cpu": 0.9984179774582511,
+      "spearman_gpu_vs_cpu": 0.9997247451579555
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "model": "word2vec_lstm",
+  "paper_name": "Word2Vec + LSTM",
+  "paradigm": "Deep Learning",
+  "representation": "Train-corpus Word2Vec initialization",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9490477368290873,
+    "precision": 0.9608938547486033,
+    "recall": 0.9361702127659575,
+    "f1": 0.9483709273182958,
+    "roc_auc": 0.9886112974989122,
+    "pr_auc": 0.9888998574340271,
+    "specificity": 0.9619188921859545,
+    "balanced_accuracy": 0.949044552475956,
+    "mcc": 0.8983921037612422,
+    "fpr": 0.0380811078140455,
+    "fnr": 0.06382978723404255,
+    "tn": 1945,
+    "fp": 77,
+    "fn": 129,
+    "tp": 1892,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.368789866566658,
+  "test_default": {
+    "accuracy": 0.9485530546623794,
+    "precision": 0.958755060728745,
+    "recall": 0.9374072241464622,
+    "f1": 0.9479609707280461,
+    "roc_auc": 0.9881209283238166,
+    "pr_auc": 0.9887327455875898,
+    "specificity": 0.9596933728981206,
+    "balanced_accuracy": 0.9485502985222913,
+    "mcc": 0.8973278968495947,
+    "fpr": 0.04030662710187933,
+    "fnr": 0.06259277585353785,
+    "tn": 3881,
+    "fp": 163,
+    "fn": 253,
+    "tp": 3789,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9500371011625031,
+    "precision": 0.9509172037679723,
+    "recall": 0.9490351311232064,
+    "f1": 0.9499752352649826,
+    "roc_auc": 0.9881209283238166,
+    "pr_auc": 0.9887327455875898,
+    "specificity": 0.9510385756676558,
+    "balanced_accuracy": 0.9500368533954311,
+    "mcc": 0.9000759093734646,
+    "fpr": 0.04896142433234421,
+    "fnr": 0.05096486887679367,
+    "tn": 3846,
+    "fp": 198,
+    "fn": 206,
+    "tp": 3836,
+    "threshold": 0.368789866566658
+  },
+  "resource": {
+    "parameters_total": 2133389,
+    "parameters_trainable": 2133389,
+    "framework": "PyTorch",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "max_epochs": 10,
+    "early_stopping_patience": 2,
+    "best_checkpoint_criterion": "validation_f1_at_0.5",
+    "best_epoch": 4,
+    "best_validation_f1": 0.9483709273182958,
+    "train_seconds": 34.873873199999935,
+    "inference_seconds": 0.5894016000002011,
+    "inference_reviews_per_second": 20578.49859925026,
+    "device": "cuda",
+    "peak_vram_gb": 0.2367238998413086,
+    "embedding": "Word2Vec_train_only_trainable",
+    "dimension": 100
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.9452139500371012,
+      "high": 0.954863344051447,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.9449134427036658,
+      "high": 0.9549995534761123,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9861007728160869,
+      "high": 0.9897793246242372,
+      "n": 1000
+    }
+  }
+}

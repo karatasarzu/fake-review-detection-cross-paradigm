@@ -1,0 +1,47 @@
+{
+  "protocol": "zero_shot_frd_to_opspam",
+  "model": "roberta_sentiment_profile",
+  "seed": 42,
+  "source_threshold": 0.9790508217963078,
+  "default": {
+    "accuracy": 0.5225,
+    "precision": 0.7142857142857143,
+    "recall": 0.075,
+    "f1": 0.13574660633484162,
+    "roc_auc": 0.66315234375,
+    "pr_auc": 0.6312193571706743,
+    "specificity": 0.97,
+    "balanced_accuracy": 0.5225,
+    "mcc": 0.10088190092585424,
+    "fpr": 0.03,
+    "fnr": 0.925,
+    "tn": 776,
+    "fp": 24,
+    "fn": 740,
+    "tp": 60,
+    "threshold": 0.5
+  },
+  "frd_validation_calibrated": {
+    "accuracy": 0.5225,
+    "precision": 0.7307692307692307,
+    "recall": 0.07125,
+    "f1": 0.12984054669703873,
+    "roc_auc": 0.66315234375,
+    "pr_auc": 0.6312193571706743,
+    "specificity": 0.97375,
+    "balanced_accuracy": 0.5225,
+    "mcc": 0.10448353873008662,
+    "fpr": 0.02625,
+    "fnr": 0.92875,
+    "tn": 779,
+    "fp": 21,
+    "fn": 743,
+    "tp": 57,
+    "threshold": 0.9790508217963078
+  },
+  "inference": {
+    "seconds": 14.720605800000001,
+    "reviews_per_second": 108.69117900025553,
+    "batch_size": 8
+  }
+}

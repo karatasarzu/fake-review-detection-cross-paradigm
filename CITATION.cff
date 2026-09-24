@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Fake Review Detection across Classical, Deep, and Transformer Models: Code and Results"
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Karataş"
+    given-names: "Arzu"
+    affiliation: "Ostim Technical University"
+  - family-names: "Kayabaşı Koru"
+    given-names: "Gülsüm"
+    affiliation: "Ostim Technical University"
+repository-code: "https://github.com/karatasarzu/fake-review-detection-cross-paradigm"
+date-released: "2026-09-25"
+abstract: "Code, data, predictions, and statistics for a leakage-controlled comparison of classical machine-learning, deep-learning, and Transformer detectors for machine-generated reviews on the Fake Reviews Dataset, with zero-shot evaluation on AiGen-FoodReview."
+keywords:
+  - fake review detection
+  - machine-generated text detection
+  - transformer models
+  - sentiment analysis
+  - distribution shift
+  - reproducibility
+license: MIT

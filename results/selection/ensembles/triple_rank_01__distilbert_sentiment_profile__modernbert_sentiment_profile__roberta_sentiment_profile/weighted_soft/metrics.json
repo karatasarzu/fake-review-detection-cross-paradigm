@@ -1,0 +1,78 @@
+{
+  "model": "triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile",
+  "method": "weighted_soft",
+  "seed": 42,
+  "selected_threshold": 0.549767505326483,
+  "validation_default": {
+    "accuracy": 0.986643581498887,
+    "precision": 0.985679012345679,
+    "recall": 0.987629886194953,
+    "f1": 0.9866534849233811,
+    "roc_auc": 0.9990918794791191,
+    "pr_auc": 0.9991090120384208,
+    "specificity": 0.9856577645895154,
+    "balanced_accuracy": 0.9866438253922342,
+    "mcc": 0.9732890798296341,
+    "fpr": 0.014342235410484669,
+    "fnr": 0.012370113805047007,
+    "tn": 1993,
+    "fp": 29,
+    "fn": 25,
+    "tp": 1996,
+    "threshold": 0.5
+  },
+  "test_default": {
+    "accuracy": 0.9867672520405639,
+    "precision": 0.9856825475191311,
+    "recall": 0.9878772884710539,
+    "f1": 0.9867786976399358,
+    "roc_auc": 0.9991436969192421,
+    "pr_auc": 0.9991660375891621,
+    "specificity": 0.9856577645895154,
+    "balanced_accuracy": 0.9867675265302847,
+    "mcc": 0.9735369291604092,
+    "fpr": 0.014342235410484669,
+    "fnr": 0.012122711528946067,
+    "tn": 3986,
+    "fp": 58,
+    "fn": 49,
+    "tp": 3993,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9875092752906258,
+    "precision": 0.9898086005468556,
+    "recall": 0.9851558634339436,
+    "f1": 0.9874767513949163,
+    "roc_auc": 0.9991436969192421,
+    "pr_auc": 0.9991660375891621,
+    "specificity": 0.9898615232443125,
+    "balanced_accuracy": 0.987508693339128,
+    "mcc": 0.9750292869192101,
+    "fpr": 0.010138476755687438,
+    "fnr": 0.014844136566056407,
+    "tn": 4003,
+    "fp": 41,
+    "fn": 60,
+    "tp": 3982,
+    "threshold": 0.549767505326483
+  },
+  "meta": {
+    "members": [
+      "distilbert_sentiment_profile",
+      "modernbert_sentiment_profile",
+      "roberta_sentiment_profile"
+    ],
+    "weights": {
+      "distilbert_sentiment_profile": 0.1,
+      "modernbert_sentiment_profile": 0.45,
+      "roberta_sentiment_profile": 0.45
+    },
+    "protocol": "frd",
+    "selection_data": "validation_only",
+    "triple_rank": 1,
+    "weight_search_step": 0.05,
+    "method": "weighted_soft",
+    "selected_threshold": 0.549767505326483
+  }
+}

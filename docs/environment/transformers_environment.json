@@ -1,0 +1,27 @@
+{
+  "python": "3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)]",
+  "executable": "<project>\\.venv_frd_safe\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "machine": "AMD64",
+  "packages": {
+    "torch": "2.5.1+cu118",
+    "transformers": "4.48.3",
+    "accelerate": "1.2.1",
+    "peft": "0.14.0",
+    "datasets": null,
+    "scikit-learn": "1.4.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "textblob": "0.18.0.post0",
+    "matplotlib": "3.9.4"
+  },
+  "torch_cuda_available": true,
+  "torch_cuda_version": "11.8",
+  "cudnn_version": 90100,
+  "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_vram_bytes": 6441926656,
+  "gpu_vram_gb": 6.0,
+  "bf16_supported": true,
+  "nvidia_smi": "NVIDIA GeForce RTX 3060 Laptop GPU, 517.00, 6144 MiB"
+}

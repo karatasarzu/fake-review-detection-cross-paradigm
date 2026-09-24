@@ -1,0 +1,87 @@
+{
+  "model": "naive_bayes",
+  "paper_name": "Naive Bayes (NB)",
+  "paradigm": "Traditional ML",
+  "representation": "Bag-of-Words",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.8614889933217907,
+    "precision": 0.8460445286594032,
+    "recall": 0.8837209302325582,
+    "f1": 0.8644724104549855,
+    "roc_auc": 0.941578558665173,
+    "pr_auc": 0.9466846286770707,
+    "specificity": 0.8392680514342236,
+    "balanced_accuracy": 0.8614944908333908,
+    "mcc": 0.723698601531089,
+    "fpr": 0.16073194856577647,
+    "fnr": 0.11627906976744186,
+    "tn": 1697,
+    "fp": 325,
+    "fn": 235,
+    "tp": 1786,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.6559064856303211,
+  "test_default": {
+    "accuracy": 0.8696512490724709,
+    "precision": 0.8577586206896551,
+    "recall": 0.8861949529935675,
+    "f1": 0.8717449501095157,
+    "roc_auc": 0.9475784921039274,
+    "pr_auc": 0.9522441997881637,
+    "specificity": 0.8531157270029673,
+    "balanced_accuracy": 0.8696553399982674,
+    "mcc": 0.7397110125424272,
+    "fpr": 0.14688427299703263,
+    "fnr": 0.11380504700643246,
+    "tn": 3450,
+    "fp": 594,
+    "fn": 460,
+    "tp": 3582,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.8674251793222855,
+    "precision": 0.8706939590614079,
+    "recall": 0.8629391390400791,
+    "f1": 0.8667992047713717,
+    "roc_auc": 0.9475784921039274,
+    "pr_auc": 0.9522441997881637,
+    "specificity": 0.8719090009891197,
+    "balanced_accuracy": 0.8674240700145994,
+    "mcc": 0.7348788920391015,
+    "fpr": 0.1280909990108803,
+    "fnr": 0.13706086095992084,
+    "tn": 3526,
+    "fp": 518,
+    "fn": 554,
+    "tp": 3488,
+    "threshold": 0.6559064856303211
+  },
+  "resource": {
+    "framework": "scikit-learn",
+    "vectorizer": "CountVectorizer unigram",
+    "vocabulary_size": 18390,
+    "train_seconds": 2.5057430999999895,
+    "inference_seconds": 0.0045692999999857875,
+    "inference_reviews_per_second": 2654454.730492138
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.8602491961414791,
+      "high": 0.8749690823645807,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.8590422540291972,
+      "high": 0.8748310461279286,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9433694373028467,
+      "high": 0.9518727198780095,
+      "n": 1000
+    }
+  }
+}

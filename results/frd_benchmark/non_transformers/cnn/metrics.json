@@ -1,0 +1,101 @@
+{
+  "model": "cnn",
+  "paper_name": "CNN",
+  "paradigm": "Deep Learning",
+  "representation": "Random trainable word embeddings",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9297551323274796,
+    "precision": 0.9349023535302955,
+    "recall": 0.9238000989609104,
+    "f1": 0.929318068690891,
+    "roc_auc": 0.9832288909085659,
+    "pr_auc": 0.9837534610362256,
+    "specificity": 0.9357072205736894,
+    "balanced_accuracy": 0.9297536597673,
+    "mcc": 0.8595704256136343,
+    "fpr": 0.06429277942631058,
+    "fnr": 0.07619990103908957,
+    "tn": 1892,
+    "fp": 130,
+    "fn": 154,
+    "tp": 1867,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.41375648975372314,
+  "test_default": {
+    "accuracy": 0.9340836012861736,
+    "precision": 0.9427201614938178,
+    "recall": 0.9242949035131123,
+    "f1": 0.9334166146158651,
+    "roc_auc": 0.9823766867280304,
+    "pr_auc": 0.9842057050462281,
+    "specificity": 0.9438674579624134,
+    "balanced_accuracy": 0.9340811807377629,
+    "mcc": 0.8683323435583562,
+    "fpr": 0.056132542037586546,
+    "fnr": 0.07570509648688768,
+    "tn": 3817,
+    "fp": 227,
+    "fn": 306,
+    "tp": 3736,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9333415780361118,
+    "precision": 0.9334323187329869,
+    "recall": 0.9332013854527461,
+    "f1": 0.9333168378077447,
+    "roc_auc": 0.9823766867280304,
+    "pr_auc": 0.9842057050462281,
+    "specificity": 0.9334817012858556,
+    "balanced_accuracy": 0.9333415433693009,
+    "mcc": 0.8666831662710194,
+    "fpr": 0.06651829871414441,
+    "fnr": 0.06679861454725383,
+    "tn": 3775,
+    "fp": 269,
+    "fn": 270,
+    "tp": 3772,
+    "threshold": 0.41375648975372314
+  },
+  "resource": {
+    "parameters_total": 2079757,
+    "parameters_trainable": 2079757,
+    "framework": "PyTorch",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "max_epochs": 10,
+    "early_stopping_patience": 2,
+    "best_checkpoint_criterion": "validation_f1_at_0.5",
+    "best_epoch": 9,
+    "best_validation_f1": 0.929318068690891,
+    "train_seconds": 23.08017170000005,
+    "inference_seconds": 0.3061449999999013,
+    "inference_reviews_per_second": 39618.4814385468,
+    "device": "cuda",
+    "peak_vram_gb": 0.20905637741088867,
+    "embedding": "random_trainable",
+    "dimension": 100,
+    "kernel_size": 5
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.927896982438783,
+      "high": 0.9382914914667326,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.927477310630317,
+      "high": 0.9384657055047,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.980140061778763,
+      "high": 0.9845308324797266,
+      "n": 1000
+    }
+  }
+}

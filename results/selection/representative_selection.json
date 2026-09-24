@@ -1,0 +1,22 @@
+{
+  "protocol": "frd",
+  "selection_data": "validation_only",
+  "selected_by_backbone": {
+    "bert": "bert",
+    "roberta": "roberta_sentiment_profile",
+    "deberta": "deberta",
+    "deberta_v3_base": "deberta_v3_sentiment_gated",
+    "modernbert_base": "modernbert_sentiment_profile",
+    "electra_base": "electra_base",
+    "distilbert": "distilbert_sentiment_profile"
+  },
+  "representatives": [
+    "bert",
+    "roberta_sentiment_profile",
+    "deberta",
+    "deberta_v3_sentiment_gated",
+    "modernbert_sentiment_profile",
+    "electra_base",
+    "distilbert_sentiment_profile"
+  ]
+}

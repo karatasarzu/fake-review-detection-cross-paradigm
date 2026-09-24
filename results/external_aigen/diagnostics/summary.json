@@ -1,0 +1,63 @@
+{
+  "n_authentic": 1986,
+  "n_machine": 2044,
+  "all_authentic_accuracy": 0.49280397022332506,
+  "individual_systems": 14,
+  "accuracy_range": [
+    0.4647642679900744,
+    0.49255583126550867
+  ],
+  "recall_max_at_tau": 0.0014677103718199608,
+  "specificity_range": [
+    0.9415911379657603,
+    0.999496475327291
+  ],
+  "recall_max_at_0.5": 0.0014677103718199608,
+  "max_abs_acc_change_pp_tau_to_0.5": 0.2233250620347349,
+  "max_median_prob_any_class": 0.00082892738282675,
+  "auc_above_chance": [
+    "BERT",
+    "DeBERTa",
+    "DeBERTa + Sentiment Profile",
+    "ModernBERT"
+  ],
+  "auc_below_chance": [
+    "BERT + Sentiment Profile",
+    "RoBERTa",
+    "DeBERTa-v3 + Sentiment Profile (Gated)",
+    "ModernBERT + Sentiment Profile",
+    "ELECTRA",
+    "ELECTRA + Sentiment Profile",
+    "DistilBERT",
+    "DistilBERT + Sentiment Profile"
+  ],
+  "auc_includes_0.5": [
+    "RoBERTa + Sentiment Profile",
+    "DeBERTa-v3"
+  ],
+  "auc_diff_bert_minus_final": {
+    "point": 0.46982448568551294,
+    "ci_low": 0.4490809372274762,
+    "ci_high": 0.48984390933643956
+  },
+  "surface_features": {
+    "median_words": {
+      "authentic": 125.0,
+      "machine": 160.0,
+      "all": 145.0
+    },
+    "title_share": {
+      "authentic": 0.0,
+      "machine": 0.5841487279843445
+    },
+    "linebreak_share": {
+      "authentic": 0.0,
+      "machine": 0.7636986301369864
+    },
+    "auc_word_count": 0.5990454463041682,
+    "auc_title_indicator": 0.7920743639921722,
+    "auc_linebreak_indicator": 0.8818493150684932,
+    "auc_title_or_break_indicator": 0.8818493150684932,
+    "machine_without_title_or_break": 483
+  }
+}

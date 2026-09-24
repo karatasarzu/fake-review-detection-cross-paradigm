@@ -1,0 +1,54 @@
+{
+  "runner_version": "1.0.0",
+  "seed": 42,
+  "bootstrap_n": 1000,
+  "bootstrap_seed": 314159,
+  "selection_rule": "validation_default accuracy, then F1, then ROC-AUC, then deterministic model key tie-break",
+  "test_selection_forbidden": true,
+  "positive_class": "CG / machine-generated = 1",
+  "traditional_selected": {
+    "key": "tfidf_svm",
+    "model": "TF-IDF + SVM"
+  },
+  "deep_learning_selected": {
+    "key": "word2vec_lstm",
+    "model": "Word2Vec + LSTM"
+  },
+  "plain_transformer_selected": {
+    "key": "modernbert_base",
+    "model": "ModernBERT"
+  },
+  "transformer_representatives_by_backbone": {
+    "BERT": "bert",
+    "RoBERTa": "roberta_sentiment_profile",
+    "DeBERTa": "deberta",
+    "DeBERTa-v3": "deberta_v3_sentiment_gated",
+    "ModernBERT": "modernbert_sentiment_profile",
+    "ELECTRA": "electra_base",
+    "DistilBERT": "distilbert_sentiment_profile"
+  },
+  "extended_individual_selected": {
+    "key": "modernbert_sentiment_profile",
+    "model": "ModernBERT + Sentiment Profile"
+  },
+  "ensemble_manifest": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\selection_manifest.json",
+  "ensemble_rank": 1,
+  "ensemble_members": [
+    "distilbert_sentiment_profile",
+    "modernbert_sentiment_profile",
+    "roberta_sentiment_profile"
+  ],
+  "ensemble_method": "weighted_soft",
+  "ensemble_result_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile\\weighted_soft",
+  "multiple_testing_families": {
+    "planned_progression": 4,
+    "matched_sentiment_ablation": 7
+  },
+  "notes": [
+    "All model/stage representatives are selected using validation information only.",
+    "All paired tests use identical held-out FRD test observations.",
+    "Each system retains its own validation-selected operating threshold.",
+    "The plain-Transformer -> extended-individual progression contrast is system-level and does not isolate sentiment causally.",
+    "Use the seven matched plain-vs-sentiment comparisons for sentiment-specific inference."
+  ]
+}

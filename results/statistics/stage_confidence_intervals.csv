@@ -1,0 +1,16 @@
+stage,model_key,model,metric,estimate,ci_low,ci_high,bootstrap_n_valid
+Traditional ML,tfidf_svm,TF-IDF + SVM,accuracy,0.9432352213702696,0.9380410586198368,0.9483088053425675,1000
+Traditional ML,tfidf_svm,TF-IDF + SVM,f1,0.9440312157054018,0.9388586243516868,0.9491275665092541,1000
+Traditional ML,tfidf_svm,TF-IDF + SVM,roc_auc,0.986271376070547,0.9843170481538644,0.9881959332391281,1000
+Deep Learning,word2vec_lstm,Word2Vec + LSTM,accuracy,0.9500371011625031,0.9455849616621321,0.9544892406628741,1000
+Deep Learning,word2vec_lstm,Word2Vec + LSTM,f1,0.9499752352649826,0.9454589651074875,0.9546035793264456,1000
+Deep Learning,word2vec_lstm,Word2Vec + LSTM,roc_auc,0.9881209283238166,0.9863104255714018,0.9898959718238826,1000
+Plain Transformer,modernbert_base,ModernBERT,accuracy,0.9823151125401929,0.9798417017066535,0.9851595349987633,1000
+Plain Transformer,modernbert_base,ModernBERT,f1,0.9824259555118594,0.9799004051049555,0.9852880101886428,1000
+Plain Transformer,modernbert_base,ModernBERT,roc_auc,0.9985351020026616,0.9981161071302687,0.998922693501172,1000
+Validation-selected Transformer configuration,modernbert_sentiment_profile,ModernBERT + Sentiment Profile,accuracy,0.9831808063319317,0.9805837249567153,0.9860252287905021,1000
+Validation-selected Transformer configuration,modernbert_sentiment_profile,ModernBERT + Sentiment Profile,f1,0.9831432821021319,0.9805219007583056,0.9859547790094343,1000
+Validation-selected Transformer configuration,modernbert_sentiment_profile,ModernBERT + Sentiment Profile,roc_auc,0.9984194151322097,0.997966747596184,0.9988588757580411,1000
+Final weighted ensemble,ensemble_rank1_weighted_soft,DistilBERT + Sentiment Profile + ModernBERT + Sentiment Profile + RoBERTa + Sentiment Profile (Weighted Soft Voting),accuracy,0.9875092752906258,0.9851564432352213,0.9899826861241652,1000
+Final weighted ensemble,ensemble_rank1_weighted_soft,DistilBERT + Sentiment Profile + ModernBERT + Sentiment Profile + RoBERTa + Sentiment Profile (Weighted Soft Voting),f1,0.9874767513949163,0.9850661606721393,0.9900086345133835,1000
+Final weighted ensemble,ensemble_rank1_weighted_soft,DistilBERT + Sentiment Profile + ModernBERT + Sentiment Profile + RoBERTa + Sentiment Profile (Weighted Soft Voting),roc_auc,0.9991436969192421,0.9988767201225915,0.9994020515460222,1000

@@ -1,0 +1,81 @@
+{
+  "runner_version": "1.0.2",
+  "protocol": "frd",
+  "seed": 42,
+  "selection_data": "validation_only",
+  "candidate_pool": [
+    "bert",
+    "deberta",
+    "deberta_v3_sentiment_gated",
+    "distilbert_sentiment_profile",
+    "electra_base",
+    "modernbert_sentiment_profile",
+    "roberta_sentiment_profile"
+  ],
+  "combination_size": 3,
+  "total_combinations": 35,
+  "selected_top_n": 3,
+  "selected": [
+    {
+      "rank": 1,
+      "members": [
+        "distilbert_sentiment_profile",
+        "modernbert_sentiment_profile",
+        "roberta_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "distilbert_sentiment_profile",
+          "modernbert_sentiment_profile",
+          "roberta_sentiment_profile"
+        ],
+        "validation_accuracy": 0.986643581498887,
+        "validation_f1": 0.986653484923381,
+        "validation_roc_auc": 0.9990774415619184
+      },
+      "equal_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile\\equal_soft",
+      "weighted_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile\\weighted_soft"
+    },
+    {
+      "rank": 2,
+      "members": [
+        "electra_base",
+        "modernbert_sentiment_profile",
+        "roberta_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "electra_base",
+          "modernbert_sentiment_profile",
+          "roberta_sentiment_profile"
+        ],
+        "validation_accuracy": 0.9859015582488251,
+        "validation_f1": 0.9859224499876512,
+        "validation_roc_auc": 0.99897564201013
+      },
+      "equal_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_02__electra_base__modernbert_sentiment_profile__roberta_sentiment_profile\\equal_soft",
+      "weighted_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_02__electra_base__modernbert_sentiment_profile__roberta_sentiment_profile\\weighted_soft"
+    },
+    {
+      "rank": 3,
+      "members": [
+        "distilbert_sentiment_profile",
+        "electra_base",
+        "modernbert_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "distilbert_sentiment_profile",
+          "electra_base",
+          "modernbert_sentiment_profile"
+        ],
+        "validation_accuracy": 0.9859015582488251,
+        "validation_f1": 0.9859015582488252,
+        "validation_roc_auc": 0.9988302839962785
+      },
+      "equal_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_03__distilbert_sentiment_profile__electra_base__modernbert_sentiment_profile\\equal_soft",
+      "weighted_soft_dir": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_rank_03__distilbert_sentiment_profile__electra_base__modernbert_sentiment_profile\\weighted_soft"
+    }
+  ],
+  "search_csv": "<project>\\results\\sentiment_extension\\seed_42\\ensembles\\frd\\triple_search_validation.csv"
+}

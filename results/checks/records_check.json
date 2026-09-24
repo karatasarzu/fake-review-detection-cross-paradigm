@@ -1,0 +1,700 @@
+{
+  "project": "<project>",
+  "transformers": [
+    {
+      "key": "bert",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.20804226459082598,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9708137521642345,
+      "val_f1": 0.9707776126795444,
+      "val_roc_auc": 0.9959406205172101
+    },
+    {
+      "key": "roberta",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.03126213002387761,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9633935196636161,
+      "val_f1": 0.9625316455696202,
+      "val_roc_auc": 0.9964246578091269
+    },
+    {
+      "key": "deberta",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.019570925940085426,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9792233489982686,
+      "val_f1": 0.9790940766550523,
+      "val_roc_auc": 0.9981395887200223
+    },
+    {
+      "key": "deberta_v3_base",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "fp32",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.13417820632457733,
+      "reconciled": true,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9779866435814989,
+      "val_f1": 0.9779757485770849,
+      "val_roc_auc": 0.9980235959614944,
+      "reconciliation_prior_precision": "fp32"
+    },
+    {
+      "key": "modernbert_base",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.28302879089934707,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9836754884986396,
+      "val_f1": 0.9838076545632973,
+      "val_roc_auc": 0.9987584614759663
+    },
+    {
+      "key": "electra_base",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.9739435122241902,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9812020776651001,
+      "val_f1": 0.981243830207305,
+      "val_roc_auc": 0.9978026224151846
+    },
+    {
+      "key": "distilbert",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.2987274209627846,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.981944100915162,
+      "val_f1": 0.9819172652960119,
+      "val_roc_auc": 0.9981116917274651
+    },
+    {
+      "key": "bert_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.21800289870082784,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9661142715805096,
+      "val_f1": 0.9662976629766298,
+      "val_roc_auc": 0.9943156207007432
+    },
+    {
+      "key": "roberta_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.9790508217963078,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9782339846648528,
+      "val_f1": 0.9783889980353635,
+      "val_roc_auc": 0.998082938248294
+    },
+    {
+      "key": "deberta_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "fp32",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.99,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9757605738313134,
+      "val_f1": 0.9760508308895406,
+      "val_roc_auc": 0.9978470373638615
+    },
+    {
+      "key": "deberta_v3_sentiment_gated",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "fp16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.05772783383033802,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9799653722483305,
+      "val_f1": 0.9800246609124538,
+      "val_roc_auc": 0.9982515437559434
+    },
+    {
+      "key": "modernbert_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.02106755665214396,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9844175117487015,
+      "val_f1": 0.9844020797227037,
+      "val_roc_auc": 0.9986577631212525
+    },
+    {
+      "key": "electra_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.9544776935320545,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9690823645807569,
+      "val_f1": 0.9693702523891203,
+      "val_roc_auc": 0.995286264744417
+    },
+    {
+      "key": "distilbert_sentiment_profile",
+      "found": true,
+      "profile": "full_primary",
+      "precision": "bf16",
+      "micro_batch": 2,
+      "grad_accum": 8,
+      "effective_batch": 16,
+      "learning_rate": 2e-05,
+      "threshold": 0.8807628123443481,
+      "reconciled": false,
+      "attempt_dirs": [
+        "full_primary"
+      ],
+      "val_accuracy": 0.9836754884986396,
+      "val_f1": 0.9836633663366336,
+      "val_roc_auc": 0.9979735526722139
+    }
+  ],
+  "non_transformers": [
+    {
+      "key": "naive_bayes",
+      "found": true,
+      "threshold": 0.6559064856303211,
+      "val_accuracy": 0.8614889933217907,
+      "val_f1": 0.8644724104549855,
+      "val_roc_auc": 0.941578558665173
+    },
+    {
+      "key": "logistic_regression",
+      "found": true,
+      "threshold": 0.5431733899264188,
+      "val_accuracy": 0.8985901558248826,
+      "val_f1": 0.8994111874386653,
+      "val_roc_auc": 0.9650967022328851
+    },
+    {
+      "key": "tfidf_lr_pos",
+      "found": true,
+      "threshold": 0.5295724247627861,
+      "val_accuracy": 0.9102151867425179,
+      "val_f1": 0.9098136645962733,
+      "val_roc_auc": 0.9693218730530223
+    },
+    {
+      "key": "tfidf_lr_ngram",
+      "found": true,
+      "threshold": 0.4376147704782606,
+      "val_accuracy": 0.9292604501607717,
+      "val_f1": 0.9281767955801105,
+      "val_roc_auc": 0.981936207898177
+    },
+    {
+      "key": "word2vec_rf",
+      "found": true,
+      "threshold": 0.51625,
+      "val_accuracy": 0.8713826366559485,
+      "val_f1": 0.8732943469785575,
+      "val_roc_auc": 0.952159471934402
+    },
+    {
+      "key": "tfidf_svm",
+      "found": true,
+      "threshold": 0.49249422160511225,
+      "val_accuracy": 0.9381647291615137,
+      "val_f1": 0.9392023346303502,
+      "val_roc_auc": 0.9857884399757052
+    },
+    {
+      "key": "lstm",
+      "found": true,
+      "threshold": 0.5943600237369537,
+      "val_accuracy": 0.9443482562453623,
+      "val_f1": 0.9439601494396015,
+      "val_roc_auc": 0.9850005946464202
+    },
+    {
+      "key": "cnn",
+      "found": true,
+      "threshold": 0.41375648975372314,
+      "val_accuracy": 0.9297551323274796,
+      "val_f1": 0.929318068690891,
+      "val_roc_auc": 0.9832288909085659
+    },
+    {
+      "key": "multichannel_word2vec_cnn",
+      "found": true,
+      "threshold": 0.665436714887619,
+      "val_accuracy": 0.9453376205787781,
+      "val_f1": 0.945310566691413,
+      "val_roc_auc": 0.9873681683568819
+    },
+    {
+      "key": "word2vec_lstm",
+      "found": true,
+      "threshold": 0.368789866566658,
+      "val_accuracy": 0.9490477368290873,
+      "val_f1": 0.9483709273182958,
+      "val_roc_auc": 0.9886112974989122
+    },
+    {
+      "key": "glove_lstm",
+      "found": true,
+      "threshold": 0.5634922683238983,
+      "val_accuracy": 0.9468216670789018,
+      "val_f1": 0.9463171036204744,
+      "val_roc_auc": 0.9884154067748581
+    }
+  ],
+  "representative_selection": {
+    "protocol": "frd",
+    "selection_data": "validation_only",
+    "selected_by_backbone": {
+      "bert": "bert",
+      "roberta": "roberta_sentiment_profile",
+      "deberta": "deberta",
+      "deberta_v3_base": "deberta_v3_sentiment_gated",
+      "modernbert_base": "modernbert_sentiment_profile",
+      "electra_base": "electra_base",
+      "distilbert": "distilbert_sentiment_profile"
+    },
+    "representatives": [
+      "bert",
+      "roberta_sentiment_profile",
+      "deberta",
+      "deberta_v3_sentiment_gated",
+      "modernbert_sentiment_profile",
+      "electra_base",
+      "distilbert_sentiment_profile"
+    ]
+  },
+  "ensembles": [
+    {
+      "rank": 1,
+      "members": [
+        "distilbert_sentiment_profile",
+        "modernbert_sentiment_profile",
+        "roberta_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "distilbert_sentiment_profile",
+          "modernbert_sentiment_profile",
+          "roberta_sentiment_profile"
+        ],
+        "validation_accuracy": 0.986643581498887,
+        "validation_f1": 0.986653484923381,
+        "validation_roc_auc": 0.9990774415619184
+      },
+      "equal_soft": {
+        "threshold": 0.6650657591173545,
+        "weights": {
+          "distilbert_sentiment_profile": 0.3333333333333333,
+          "modernbert_sentiment_profile": 0.3333333333333333,
+          "roberta_sentiment_profile": 0.3333333333333333
+        },
+        "val_accuracy": 0.986643581498887,
+        "val_f1": 0.9866534849233811,
+        "val_roc_auc": 0.9990774415619185
+      },
+      "weighted_soft": {
+        "threshold": 0.549767505326483,
+        "weights": {
+          "distilbert_sentiment_profile": 0.1,
+          "modernbert_sentiment_profile": 0.45,
+          "roberta_sentiment_profile": 0.45
+        },
+        "val_accuracy": 0.986643581498887,
+        "val_f1": 0.9866534849233811,
+        "val_roc_auc": 0.9990918794791191
+      }
+    },
+    {
+      "rank": 2,
+      "members": [
+        "electra_base",
+        "modernbert_sentiment_profile",
+        "roberta_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "electra_base",
+          "modernbert_sentiment_profile",
+          "roberta_sentiment_profile"
+        ],
+        "validation_accuracy": 0.9859015582488251,
+        "validation_f1": 0.9859224499876512,
+        "validation_roc_auc": 0.99897564201013
+      },
+      "equal_soft": {
+        "threshold": 0.6574524007452155,
+        "weights": {
+          "electra_base": 0.3333333333333333,
+          "modernbert_sentiment_profile": 0.3333333333333333,
+          "roberta_sentiment_profile": 0.3333333333333333
+        },
+        "val_accuracy": 0.9859015582488251,
+        "val_f1": 0.9859224499876512,
+        "val_roc_auc": 0.9989756420101301
+      },
+      "weighted_soft": {
+        "threshold": 0.5441121394952305,
+        "weights": {
+          "electra_base": 0.15,
+          "modernbert_sentiment_profile": 0.45,
+          "roberta_sentiment_profile": 0.4
+        },
+        "val_accuracy": 0.986396240415533,
+        "val_f1": 0.9864231054060726,
+        "val_roc_auc": 0.9990338830998551
+      }
+    },
+    {
+      "rank": 3,
+      "members": [
+        "distilbert_sentiment_profile",
+        "electra_base",
+        "modernbert_sentiment_profile"
+      ],
+      "validation_search": {
+        "members": [
+          "distilbert_sentiment_profile",
+          "electra_base",
+          "modernbert_sentiment_profile"
+        ],
+        "validation_accuracy": 0.9859015582488251,
+        "validation_f1": 0.9859015582488252,
+        "validation_roc_auc": 0.9988302839962785
+      },
+      "equal_soft": {
+        "threshold": 0.6291983049992996,
+        "weights": {
+          "distilbert_sentiment_profile": 0.3333333333333333,
+          "electra_base": 0.3333333333333333,
+          "modernbert_sentiment_profile": 0.3333333333333333
+        },
+        "val_accuracy": 0.9859015582488251,
+        "val_f1": 0.9859015582488251,
+        "val_roc_auc": 0.9988302839962784
+      },
+      "weighted_soft": {
+        "threshold": 0.45176655029050194,
+        "weights": {
+          "distilbert_sentiment_profile": 0.15,
+          "electra_base": 0.4,
+          "modernbert_sentiment_profile": 0.45
+        },
+        "val_accuracy": 0.986396240415533,
+        "val_f1": 0.986396240415533,
+        "val_roc_auc": 0.9988202508673762
+      }
+    }
+  ],
+  "triple_search_top5": [
+    {
+      "rank": "1",
+      "member_1": "distilbert_sentiment_profile",
+      "member_2": "modernbert_sentiment_profile",
+      "member_3": "roberta_sentiment_profile",
+      "validation_accuracy": "0.986643581498887",
+      "validation_f1": "0.986653484923381",
+      "validation_roc_auc": "0.9990774415619184"
+    },
+    {
+      "rank": "2",
+      "member_1": "electra_base",
+      "member_2": "modernbert_sentiment_profile",
+      "member_3": "roberta_sentiment_profile",
+      "validation_accuracy": "0.9859015582488251",
+      "validation_f1": "0.9859224499876512",
+      "validation_roc_auc": "0.99897564201013"
+    },
+    {
+      "rank": "3",
+      "member_1": "distilbert_sentiment_profile",
+      "member_2": "electra_base",
+      "member_3": "modernbert_sentiment_profile",
+      "validation_accuracy": "0.9859015582488251",
+      "validation_f1": "0.9859015582488252",
+      "validation_roc_auc": "0.9988302839962785"
+    },
+    {
+      "rank": "4",
+      "member_1": "deberta",
+      "member_2": "distilbert_sentiment_profile",
+      "member_3": "modernbert_sentiment_profile",
+      "validation_accuracy": "0.9859015582488251",
+      "validation_f1": "0.9858806044092148",
+      "validation_roc_auc": "0.9989707478009094"
+    },
+    {
+      "rank": "5",
+      "member_1": "deberta_v3_sentiment_gated",
+      "member_2": "modernbert_sentiment_profile",
+      "member_3": "roberta_sentiment_profile",
+      "validation_accuracy": "0.9856542171654712",
+      "validation_f1": "0.9856719367588933",
+      "validation_roc_auc": "0.9990451397810625"
+    }
+  ],
+  "aigen_inference": [
+    {
+      "system_key": "model::bert",
+      "system": "BERT",
+      "inference_batch_size": "16.0",
+      "inference_seconds": "41.0136394",
+      "reviews_per_second": "98.25999494207285"
+    },
+    {
+      "system_key": "model::bert_sentiment_profile",
+      "system": "BERT + Sentiment Profile",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "40.5760865",
+      "reviews_per_second": "99.31958322299022"
+    },
+    {
+      "system_key": "model::roberta",
+      "system": "RoBERTa",
+      "inference_batch_size": "16.0",
+      "inference_seconds": "38.78444789999999",
+      "reviews_per_second": "103.90762839761865"
+    },
+    {
+      "system_key": "model::roberta_sentiment_profile",
+      "system": "RoBERTa + Sentiment Profile",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "40.59995709999998",
+      "reviews_per_second": "99.26118862820182"
+    },
+    {
+      "system_key": "model::deberta",
+      "system": "DeBERTa",
+      "inference_batch_size": "16.0",
+      "inference_seconds": "60.163544900000005",
+      "reviews_per_second": "66.98408490886646"
+    },
+    {
+      "system_key": "model::deberta_sentiment_profile",
+      "system": "DeBERTa + Sentiment Profile",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "61.225505999999996",
+      "reviews_per_second": "65.82224081578028"
+    },
+    {
+      "system_key": "model::deberta_v3_base",
+      "system": "DeBERTa-v3",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "63.2814873",
+      "reviews_per_second": "63.68371180808198"
+    },
+    {
+      "system_key": "model::deberta_v3_sentiment_gated",
+      "system": "DeBERTa-v3 + Sentiment Profile (Gated)",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "59.73298699999998",
+      "reviews_per_second": "67.46690902967904"
+    },
+    {
+      "system_key": "model::modernbert_base",
+      "system": "ModernBERT",
+      "inference_batch_size": "4.0",
+      "inference_seconds": "1901.7398130000001",
+      "reviews_per_second": "2.1191121795166414"
+    },
+    {
+      "system_key": "model::modernbert_sentiment_profile",
+      "system": "ModernBERT + Sentiment Profile",
+      "inference_batch_size": "4.0",
+      "inference_seconds": "1815.8221373000001",
+      "reviews_per_second": "2.2193803661807574"
+    },
+    {
+      "system_key": "model::electra_base",
+      "system": "ELECTRA",
+      "inference_batch_size": "16.0",
+      "inference_seconds": "40.81914670000003",
+      "reviews_per_second": "98.72817846042815"
+    },
+    {
+      "system_key": "model::electra_sentiment_profile",
+      "system": "ELECTRA + Sentiment Profile",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "42.2243704",
+      "reviews_per_second": "95.44251250694789"
+    },
+    {
+      "system_key": "model::distilbert",
+      "system": "DistilBERT",
+      "inference_batch_size": "16.0",
+      "inference_seconds": "20.519661400000018",
+      "reviews_per_second": "196.39700292520405"
+    },
+    {
+      "system_key": "model::distilbert_sentiment_profile",
+      "system": "DistilBERT + Sentiment Profile",
+      "inference_batch_size": "8.0",
+      "inference_seconds": "22.104216899999983",
+      "reviews_per_second": "182.31815305793543"
+    },
+    {
+      "system_key": "ensemble::triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile::equal_soft",
+      "system": "E1 Equal Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    },
+    {
+      "system_key": "ensemble::triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile::weighted_soft",
+      "system": "E1 Weighted Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    },
+    {
+      "system_key": "ensemble::triple_rank_02__electra_base__modernbert_sentiment_profile__roberta_sentiment_profile::equal_soft",
+      "system": "E2 Equal Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    },
+    {
+      "system_key": "ensemble::triple_rank_02__electra_base__modernbert_sentiment_profile__roberta_sentiment_profile::weighted_soft",
+      "system": "E2 Weighted Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    },
+    {
+      "system_key": "ensemble::triple_rank_03__distilbert_sentiment_profile__electra_base__modernbert_sentiment_profile::equal_soft",
+      "system": "E3 Equal Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    },
+    {
+      "system_key": "ensemble::triple_rank_03__distilbert_sentiment_profile__electra_base__modernbert_sentiment_profile::weighted_soft",
+      "system": "E3 Weighted Soft",
+      "inference_batch_size": "",
+      "inference_seconds": "0.0",
+      "reviews_per_second": ""
+    }
+  ],
+  "environment": {
+    "pyvenv_cfg": [
+      "home = <home>\\AppData\\Local\\Programs\\Python\\Python39",
+      "version = 3.9.1"
+    ],
+    "packages": [
+      "accelerate==1.2.1",
+      "nltk==3.9.2",
+      "numpy==1.26.4",
+      "pandas==2.2.3",
+      "scikit-learn==1.4.2",
+      "scipy==1.11.4",
+      "sentencepiece==0.2.0",
+      "textblob==0.18.0.post0",
+      "tokenizers==0.21.0",
+      "torch==2.5.1+cu118",
+      "transformers==4.48.3"
+    ]
+  }
+}

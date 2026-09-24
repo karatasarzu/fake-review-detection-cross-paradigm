@@ -1,0 +1,11 @@
+The file data/deceptive-opinion.csv contains the Deceptive Opinion Spam corpus
+of M. Ott, Y. Choi, C. Cardie, and J. T. Hancock (ACL-HLT 2011) and
+M. Ott, C. Cardie, and J. T. Hancock (NAACL-HLT 2013), in the CSV format
+distributed on Kaggle (https://www.kaggle.com/datasets/rtatman/deceptive-opinion-spam-corpus).
+It is redistributed unchanged.
+
+The corpus is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 Unported License (CC BY-NC-SA 3.0):
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+Source: https://myleott.com/op-spam.html

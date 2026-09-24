@@ -1,0 +1,47 @@
+{
+  "protocol": "zero_shot_frd_to_opspam",
+  "model": "bert_sentiment_profile",
+  "seed": 42,
+  "source_threshold": 0.21800289870082784,
+  "default": {
+    "accuracy": 0.50375,
+    "precision": 1.0,
+    "recall": 0.0075,
+    "f1": 0.01488833746898263,
+    "roc_auc": 0.5302351562500001,
+    "pr_auc": 0.5536986319487556,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.50375,
+    "mcc": 0.061352387344530246,
+    "fpr": 0.0,
+    "fnr": 0.9925,
+    "tn": 800,
+    "fp": 0,
+    "fn": 794,
+    "tp": 6,
+    "threshold": 0.5
+  },
+  "frd_validation_calibrated": {
+    "accuracy": 0.504375,
+    "precision": 1.0,
+    "recall": 0.00875,
+    "f1": 0.01734820322180917,
+    "roc_auc": 0.5302351562500001,
+    "pr_auc": 0.5536986319487556,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.504375,
+    "mcc": 0.06628894880149921,
+    "fpr": 0.0,
+    "fnr": 0.99125,
+    "tn": 800,
+    "fp": 0,
+    "fn": 793,
+    "tp": 7,
+    "threshold": 0.21800289870082784
+  },
+  "inference": {
+    "seconds": 14.9132933,
+    "reviews_per_second": 107.28683247985205,
+    "batch_size": 8
+  }
+}

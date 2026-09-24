@@ -1,0 +1,23 @@
+# Transformer environment (created automatically by: python FRD_Run_Transformer_Study.py setup)
+# Python 3.9-3.12; the study used Python 3.9.1 on Windows with an NVIDIA RTX 3060 Laptop GPU.
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.5.1+cu118
+transformers==4.48.3
+accelerate==1.2.1
+peft==0.14.0
+sentencepiece==0.2.0
+protobuf==5.29.3
+safetensors==0.5.3
+huggingface-hub==0.28.1
+tokenizers==0.21.0
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.11.4
+scikit-learn==1.4.2
+textblob==0.18.0.post0
+matplotlib==3.9.4
+psutil==6.1.1
+joblib==1.4.2
+fsspec==2024.5.0
+sympy==1.13.1
+networkx==3.2.1

@@ -1,0 +1,88 @@
+{
+  "model": "word2vec_rf",
+  "paper_name": "Word2Vec + Random Forest",
+  "paradigm": "Traditional ML",
+  "representation": "Mean Word2Vec document vector",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.8713826366559485,
+    "precision": 0.8602976476236198,
+    "recall": 0.8866897575457694,
+    "f1": 0.8732943469785575,
+    "roc_auc": 0.952159471934402,
+    "pr_auc": 0.9520082597580495,
+    "specificity": 0.8560830860534124,
+    "balanced_accuracy": 0.8713864217995909,
+    "mcc": 0.7431167986270183,
+    "fpr": 0.14391691394658754,
+    "fnr": 0.11331024245423058,
+    "tn": 1731,
+    "fp": 291,
+    "fn": 229,
+    "tp": 1792,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.51625,
+  "test_default": {
+    "accuracy": 0.8789265396982439,
+    "precision": 0.8666507062485037,
+    "recall": 0.8955962394854032,
+    "f1": 0.8808857525246381,
+    "roc_auc": 0.9562057594075266,
+    "pr_auc": 0.9560302417070453,
+    "specificity": 0.8622650840751731,
+    "balanced_accuracy": 0.8789306617802881,
+    "mcc": 0.7582779009251145,
+    "fpr": 0.1377349159248269,
+    "fnr": 0.10440376051459674,
+    "tn": 3487,
+    "fp": 557,
+    "fn": 422,
+    "tp": 3620,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.8792975513232748,
+    "precision": 0.8772145669291339,
+    "recall": 0.8819891142998516,
+    "f1": 0.8795953614606464,
+    "roc_auc": 0.9562057594075266,
+    "pr_auc": 0.9560302417070453,
+    "specificity": 0.8766073194856577,
+    "balanced_accuracy": 0.8792982168927547,
+    "mcc": 0.7586066439982074,
+    "fpr": 0.12339268051434224,
+    "fnr": 0.11801088570014844,
+    "tn": 3545,
+    "fp": 499,
+    "fn": 477,
+    "tp": 3565,
+    "threshold": 0.51625
+  },
+  "resource": {
+    "framework": "gensim + scikit-learn",
+    "word2vec_dim": 100,
+    "word2vec_training_partition": "train_only",
+    "random_forest_trees": 400,
+    "train_seconds": 45.47761400000002,
+    "inference_seconds": 0.46321310000007543,
+    "inference_reviews_per_second": 26184.492623369297
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.8719948058372496,
+      "high": 0.8862231016571852,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.8719081323063093,
+      "high": 0.8866844183886358,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9524909730621409,
+      "high": 0.9598848838360512,
+      "n": 1000
+    }
+  }
+}

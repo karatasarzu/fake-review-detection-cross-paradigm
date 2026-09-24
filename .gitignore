@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+.venv_frd_safe/
+.venv_baselines/
+venv/
+env/
+
+# Working folder and files created when the scripts run
+work/
+.frd_supervisor/
+.frd_runtime/
+checkpoints/
+*.safetensors
+*.bin
+*.log
+state.db
+state.db-*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

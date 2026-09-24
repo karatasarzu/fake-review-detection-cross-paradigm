@@ -1,0 +1,77 @@
+{
+  "model": "triple_rank_01__distilbert_sentiment_profile__modernbert_sentiment_profile__roberta_sentiment_profile",
+  "method": "equal_soft",
+  "seed": 42,
+  "selected_threshold": 0.6650657591173545,
+  "validation_default": {
+    "accuracy": 0.986643581498887,
+    "precision": 0.985679012345679,
+    "recall": 0.987629886194953,
+    "f1": 0.9866534849233811,
+    "roc_auc": 0.9990774415619185,
+    "pr_auc": 0.9990926724838958,
+    "specificity": 0.9856577645895154,
+    "balanced_accuracy": 0.9866438253922342,
+    "mcc": 0.9732890798296341,
+    "fpr": 0.014342235410484669,
+    "fnr": 0.012370113805047007,
+    "tn": 1993,
+    "fp": 29,
+    "fn": 25,
+    "tp": 1996,
+    "threshold": 0.5
+  },
+  "test_default": {
+    "accuracy": 0.9867672520405639,
+    "precision": 0.9854428818159389,
+    "recall": 0.9881246907471549,
+    "f1": 0.986781964175417,
+    "roc_auc": 0.9991961261355177,
+    "pr_auc": 0.999210934156852,
+    "specificity": 0.9854104846686449,
+    "balanced_accuracy": 0.9867675877078999,
+    "mcc": 0.9735381235779316,
+    "fpr": 0.014589515331355093,
+    "fnr": 0.011875309252845126,
+    "tn": 3985,
+    "fp": 59,
+    "fn": 48,
+    "tp": 3994,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9870145931239179,
+    "precision": 0.9900423201394075,
+    "recall": 0.9839188520534389,
+    "f1": 0.9869710882243454,
+    "roc_auc": 0.9991961261355177,
+    "pr_auc": 0.999210934156852,
+    "specificity": 0.990108803165183,
+    "balanced_accuracy": 0.987013827609311,
+    "mcc": 0.9740477670240952,
+    "fpr": 0.009891196834817012,
+    "fnr": 0.016081147946561108,
+    "tn": 4004,
+    "fp": 40,
+    "fn": 65,
+    "tp": 3977,
+    "threshold": 0.6650657591173545
+  },
+  "meta": {
+    "members": [
+      "distilbert_sentiment_profile",
+      "modernbert_sentiment_profile",
+      "roberta_sentiment_profile"
+    ],
+    "weights": {
+      "distilbert_sentiment_profile": 0.3333333333333333,
+      "modernbert_sentiment_profile": 0.3333333333333333,
+      "roberta_sentiment_profile": 0.3333333333333333
+    },
+    "protocol": "frd",
+    "selection_data": "validation_only",
+    "triple_rank": 1,
+    "method": "equal_soft",
+    "selected_threshold": 0.6650657591173545
+  }
+}
