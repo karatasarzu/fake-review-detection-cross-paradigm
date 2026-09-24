@@ -8,7 +8,10 @@ machine-generated class.
 
 | Paper item | File(s) |
 |---|---|
+| Table I: baseline settings | `../scripts/FRD_Run_NonTransformer_Study.py` |
+| Table II: Transformer backbones and fine-tuning settings | `../scripts/FRD_Run_Transformer_Study.py` (embedded runtime: model registry and configuration) |
 | Table III: validation and test results of all systems | `frd_benchmark/all_systems.csv` |
+| Section V-A: equal versus weighted voting of the three selected triples | `frd_benchmark/all_systems.csv` (rows E1–E3) |
 | Table IV: stage progression, confusion counts, paired tests | `statistics/stage_selection_and_metrics.csv`, `statistics/stage_confidence_intervals.csv`, `statistics/planned_progression_paired_tests.csv`, `statistics/planned_progression_bootstrap_effects.csv` |
 | Table V: sentiment ablation | `statistics/sentiment_ablation_paired_tests.csv`, `statistics/sentiment_ablation_bootstrap_effects.csv` |
 | Table VI: AiGen-FoodReview zero-shot | `external_aigen/all_systems_primary_metrics_with_ci.csv` |
