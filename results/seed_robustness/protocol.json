@@ -1,0 +1,41 @@
+{
+  "protocol_version": 1,
+  "runner_version": "1.0.0",
+  "reference_seed": 42,
+  "declared_seed_list": [
+    42,
+    123,
+    2025,
+    3407,
+    7777
+  ],
+  "declared_seed_list_source": "FRD_Revision_AllInOne.py docstring (FRD_TRAIN_SEEDS example)",
+  "stage_1_seeds": [
+    123,
+    2025
+  ],
+  "stage_2_seeds": [
+    3407,
+    7777
+  ],
+  "pairs": {
+    "BERT": [
+      "bert",
+      "bert_sentiment_profile"
+    ],
+    "RoBERTa": [
+      "roberta",
+      "roberta_sentiment_profile"
+    ],
+    "ELECTRA": [
+      "electra_base",
+      "electra_sentiment_profile"
+    ]
+  },
+  "pair_choice": "the three pairs with a significant sentiment effect at seed 42 (Holm-corrected McNemar)",
+  "stage_2_rule": "After stage 1, a pair receives seeds 3407 and 7777 if the sign of its test-accuracy difference (sentiment minus plain) is not the same for seeds 42, 123 and 2025; a zero difference counts as inconsistent. No other pair is extended.",
+  "primary_quantity": "test accuracy difference, sentiment minus plain, at each model's validation-selected threshold",
+  "unchanged": "split, runtime, supervisor, precision policy, features, scaler, hyperparameters, checkpoint and threshold rules",
+  "frd_split_sha256": "219467539840a62fb4df8b1d21bc9fd0857695e01f956fc6ef1beebb535d6c3e",
+  "created_utc": "2026-09-25T23:02:45+00:00"
+}

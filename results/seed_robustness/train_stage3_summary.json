@@ -1,0 +1,22 @@
+{
+  "runner_version": "1.2.0",
+  "stage": 3,
+  "seeds": [
+    123,
+    2025,
+    3407,
+    7777
+  ],
+  "pairs": [
+    "BERT",
+    "RoBERTa",
+    "DeBERTa",
+    "DeBERTa-v3",
+    "ModernBERT",
+    "ELECTRA",
+    "DistilBERT"
+  ],
+  "failed_tasks": [],
+  "session": "<project>\\.frd_supervisor\\sessions\\seedrob_20260928T183151_dcdaedb7",
+  "time": "2026-09-28T21:06:24+00:00"
+}

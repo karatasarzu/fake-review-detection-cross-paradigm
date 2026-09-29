@@ -1,0 +1,17 @@
+{
+  "members": [
+    "distilbert_sentiment_profile",
+    "electra_base",
+    "modernbert_sentiment_profile"
+  ],
+  "weights": {
+    "distilbert_sentiment_profile": 0.3333333333333333,
+    "electra_base": 0.3333333333333333,
+    "modernbert_sentiment_profile": 0.3333333333333333
+  },
+  "protocol": "frd",
+  "selection_data": "validation_only",
+  "triple_rank": 3,
+  "method": "equal_soft",
+  "selected_threshold": 0.6291983049992996
+}

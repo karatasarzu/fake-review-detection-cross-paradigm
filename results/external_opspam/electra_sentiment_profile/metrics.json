@@ -1,0 +1,47 @@
+{
+  "protocol": "zero_shot_frd_to_opspam",
+  "model": "electra_sentiment_profile",
+  "seed": 42,
+  "source_threshold": 0.9544776935320545,
+  "default": {
+    "accuracy": 0.505625,
+    "precision": 0.9090909090909091,
+    "recall": 0.0125,
+    "f1": 0.02466091245376079,
+    "roc_auc": 0.59830078125,
+    "pr_auc": 0.6072920244219123,
+    "specificity": 0.99875,
+    "balanced_accuracy": 0.505625,
+    "mcc": 0.06807446207966944,
+    "fpr": 0.00125,
+    "fnr": 0.9875,
+    "tn": 799,
+    "fp": 1,
+    "fn": 790,
+    "tp": 10,
+    "threshold": 0.5
+  },
+  "frd_validation_calibrated": {
+    "accuracy": 0.503125,
+    "precision": 0.8571428571428571,
+    "recall": 0.0075,
+    "f1": 0.01486988847583643,
+    "roc_auc": 0.59830078125,
+    "pr_auc": 0.6072920244219123,
+    "specificity": 0.99875,
+    "balanced_accuracy": 0.503125,
+    "mcc": 0.04734924914392801,
+    "fpr": 0.00125,
+    "fnr": 0.9925,
+    "tn": 799,
+    "fp": 1,
+    "fn": 794,
+    "tp": 6,
+    "threshold": 0.9544776935320545
+  },
+  "inference": {
+    "seconds": 15.9035109,
+    "reviews_per_second": 100.60671571583605,
+    "batch_size": 8
+  }
+}

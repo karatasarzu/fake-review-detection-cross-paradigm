@@ -1,0 +1,30 @@
+{
+  "amendment": 1,
+  "scope": "stage 3: all seven backbone pairs with seeds 123, 2025, 3407 and 7777 (runs already present are reused)",
+  "reason": "Decided after stages 1 and 2 so that every pair in Table V has five seeds. The four added pairs had not been retrained before this amendment; ELECTRA is completed to five seeds.",
+  "precision_policy": "each model uses the numeric precision recorded in its own seed-42 run",
+  "deberta_v3_note": "plain DeBERTa-v3 is retrained with the common training routine in FP32; its seed-42 run came from a separate routine",
+  "recorded_utc": "2026-09-26T14:22:17+00:00",
+  "pairs_with_repeated_runs_at_recording": {
+    "BERT": [
+      123,
+      2025,
+      3407,
+      7777
+    ],
+    "RoBERTa": [
+      123,
+      2025,
+      3407,
+      7777
+    ],
+    "DeBERTa": [],
+    "DeBERTa-v3": [],
+    "ModernBERT": [],
+    "ELECTRA": [
+      123,
+      2025
+    ],
+    "DistilBERT": []
+  }
+}

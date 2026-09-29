@@ -1,0 +1,88 @@
+{
+  "model": "tfidf_svm",
+  "paper_name": "TF-IDF + SVM",
+  "paradigm": "Traditional ML",
+  "representation": "TF-IDF word 1-2 grams",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9381647291615137,
+    "precision": 0.923481587757054,
+    "recall": 0.9554675903018308,
+    "f1": 0.9392023346303502,
+    "roc_auc": 0.9857884399757052,
+    "pr_auc": 0.986058016808963,
+    "specificity": 0.9208704253214639,
+    "balanced_accuracy": 0.9381690078116474,
+    "mcc": 0.876856369698391,
+    "fpr": 0.0791295746785361,
+    "fnr": 0.044532409698169226,
+    "tn": 1862,
+    "fp": 160,
+    "fn": 90,
+    "tp": 1931,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.49249422160511225,
+  "test_default": {
+    "accuracy": 0.9437299035369775,
+    "precision": 0.9324813117916566,
+    "recall": 0.9567046016823355,
+    "f1": 0.94443766027598,
+    "roc_auc": 0.986271376070547,
+    "pr_auc": 0.9871624174774594,
+    "specificity": 0.9307616221562809,
+    "balanced_accuracy": 0.9437331119193082,
+    "mcc": 0.8877599593669977,
+    "fpr": 0.06923837784371908,
+    "fnr": 0.043295398317664525,
+    "tn": 3764,
+    "fp": 280,
+    "fn": 175,
+    "tp": 3867,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9432352213702696,
+    "precision": 0.9307525847559509,
+    "recall": 0.9576942107867392,
+    "f1": 0.9440312157054018,
+    "roc_auc": 0.986271376070547,
+    "pr_auc": 0.9871624174774594,
+    "specificity": 0.9287833827893175,
+    "balanced_accuracy": 0.9432387967880284,
+    "mcc": 0.8868426686904127,
+    "fpr": 0.0712166172106825,
+    "fnr": 0.04230578921326076,
+    "tn": 3756,
+    "fp": 288,
+    "fn": 171,
+    "tp": 3871,
+    "threshold": 0.49249422160511225
+  },
+  "resource": {
+    "framework": "scikit-learn",
+    "vectorizer": "TF-IDF word 1-2 grams",
+    "classifier": "LinearSVC + train-only 3-fold sigmoid calibration",
+    "vocabulary_size": 120000,
+    "train_seconds": 8.78264009999998,
+    "inference_seconds": 0.01309460000004492,
+    "inference_reviews_per_second": 926259.6795593903
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.9380410586198368,
+      "high": 0.9479377937175365,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.938744719400562,
+      "high": 0.94873391734838,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9843930661829507,
+      "high": 0.9881118112391175,
+      "n": 1000
+    }
+  }
+}

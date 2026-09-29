@@ -1,0 +1,31 @@
+{
+  "dataset": "AiGen-FoodReview official test split",
+  "dataset_path": "<project>\\test.csv",
+  "rows": 4030,
+  "columns_in_source_file": 25,
+  "class_counts": {
+    "0_authentic": 1986,
+    "1_machine_generated": 2044
+  },
+  "missing_text": 0,
+  "duplicate_ids": 0,
+  "rows_in_raw_exact_duplicate_groups": 0,
+  "rows_in_normalized_duplicate_groups": 0,
+  "md5": "c41a361eafa9800e3e8be3362a0101f4",
+  "sha256": "d0857c9a1e91dd3a2272e52441ae4a91e6292f3a519a52b1deda445c3bc9f8f2",
+  "official_test_md5_expected": "c41a361eafa9800e3e8be3362a0101f4",
+  "official_test_md5_match": true,
+  "label_mapping": {
+    "0": "authentic/human-written",
+    "1": "machine-generated"
+  },
+  "frd_overlap": {
+    "frd_split_path": "<project>\\results\\splits\\frd_split.csv",
+    "normalized_exact_overlap_rows_in_frd": 0,
+    "by_frd_split": {
+      "test": 0,
+      "train": 0,
+      "validation": 0
+    }
+  }
+}

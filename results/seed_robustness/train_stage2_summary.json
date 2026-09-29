@@ -1,0 +1,15 @@
+{
+  "runner_version": "1.0.0",
+  "stage": 2,
+  "seeds": [
+    3407,
+    7777
+  ],
+  "pairs": [
+    "BERT",
+    "RoBERTa"
+  ],
+  "failed_tasks": [],
+  "session": "<project>\\.frd_supervisor\\sessions\\seedrob_20260926T082600_dd9a7ccc",
+  "time": "2026-09-26T12:36:20+00:00"
+}

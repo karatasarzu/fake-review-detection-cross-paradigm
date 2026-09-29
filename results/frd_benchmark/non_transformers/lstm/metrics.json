@@ -1,0 +1,100 @@
+{
+  "model": "lstm",
+  "paper_name": "LSTM",
+  "paradigm": "Deep Learning",
+  "representation": "Random trainable word embeddings",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9443482562453623,
+    "precision": 0.9503510531594784,
+    "recall": 0.9376546264225631,
+    "f1": 0.9439601494396015,
+    "roc_auc": 0.9850005946464202,
+    "pr_auc": 0.9864911068855394,
+    "specificity": 0.9510385756676558,
+    "balanced_accuracy": 0.9443466010451095,
+    "mcc": 0.8887754181117047,
+    "fpr": 0.04896142433234421,
+    "fnr": 0.06234537357743691,
+    "tn": 1923,
+    "fp": 99,
+    "fn": 126,
+    "tp": 1895,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.5943600237369537,
+  "test_default": {
+    "accuracy": 0.941627504328469,
+    "precision": 0.9411764705882353,
+    "recall": 0.9421078673923801,
+    "f1": 0.9416419386745796,
+    "roc_auc": 0.9849015480873187,
+    "pr_auc": 0.9868466308451946,
+    "specificity": 0.9411473788328387,
+    "balanced_accuracy": 0.9416276231126094,
+    "mcc": 0.8832554623670966,
+    "fpr": 0.05885262116716122,
+    "fnr": 0.05789213260761999,
+    "tn": 3806,
+    "fp": 238,
+    "fn": 234,
+    "tp": 3808,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9423695275785308,
+    "precision": 0.9485699949824385,
+    "recall": 0.9354280059376546,
+    "f1": 0.941953163926258,
+    "roc_auc": 0.9849015480873187,
+    "pr_auc": 0.9868466308451946,
+    "specificity": 0.9493076162215628,
+    "balanced_accuracy": 0.9423678110796088,
+    "mcc": 0.884823535910271,
+    "fpr": 0.05069238377843719,
+    "fnr": 0.06457199406234537,
+    "tn": 3839,
+    "fp": 205,
+    "fn": 261,
+    "tp": 3781,
+    "threshold": 0.5943600237369537
+  },
+  "resource": {
+    "parameters_total": 2133389,
+    "parameters_trainable": 2133389,
+    "framework": "PyTorch",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "max_epochs": 10,
+    "early_stopping_patience": 2,
+    "best_checkpoint_criterion": "validation_f1_at_0.5",
+    "best_epoch": 8,
+    "best_validation_f1": 0.9439601494396015,
+    "train_seconds": 104.91524230000005,
+    "inference_seconds": 0.9068962999999712,
+    "inference_reviews_per_second": 13374.186221732722,
+    "device": "cuda",
+    "peak_vram_gb": 0.2367238998413086,
+    "embedding": "random_trainable",
+    "dimension": 100
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.9374227059114519,
+      "high": 0.9475667820925056,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.9369375281910569,
+      "high": 0.9471424438069043,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9827424908084529,
+      "high": 0.9870626927062554,
+      "n": 1000
+    }
+  }
+}

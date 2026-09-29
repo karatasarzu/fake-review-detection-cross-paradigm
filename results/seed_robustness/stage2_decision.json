@@ -1,0 +1,30 @@
+{
+  "stage_1_complete": true,
+  "rule": "After stage 1, a pair receives seeds 3407 and 7777 if the sign of its test-accuracy difference (sentiment minus plain) is not the same for seeds 42, 123 and 2025; a zero difference counts as inconsistent. No other pair is extended.",
+  "extend_pairs": [
+    "BERT",
+    "RoBERTa"
+  ],
+  "stage_2_seeds": [
+    3407,
+    7777
+  ],
+  "decided_utc": "2026-09-26T05:57:36+00:00",
+  "stage_1_deltas_pp": {
+    "BERT": {
+      "42": -0.5813,
+      "123": 0.3834,
+      "2025": 0.1113
+    },
+    "RoBERTa": {
+      "42": 1.1749,
+      "123": -1.9045,
+      "2025": -0.9646
+    },
+    "ELECTRA": {
+      "42": -1.0265,
+      "123": -1.2985,
+      "2025": -1.3851
+    }
+  }
+}

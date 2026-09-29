@@ -1,0 +1,102 @@
+{
+  "model": "tfidf_lr_pos",
+  "paper_name": "TF-IDF + LR (Additional Features via POS Tagging)",
+  "paradigm": "Traditional ML",
+  "representation": "TF-IDF + POS profile",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9102151867425179,
+    "precision": 0.9136726546906188,
+    "recall": 0.9059871350816427,
+    "f1": 0.9098136645962733,
+    "roc_auc": 0.9693218730530223,
+    "pr_auc": 0.970607080892078,
+    "specificity": 0.9144411473788329,
+    "balanced_accuracy": 0.9102141412302378,
+    "mcc": 0.8204590015953414,
+    "fpr": 0.08555885262116716,
+    "fnr": 0.09401286491835725,
+    "tn": 1849,
+    "fp": 173,
+    "fn": 190,
+    "tp": 1831,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.5295724247627861,
+  "test_default": {
+    "accuracy": 0.9175117487014594,
+    "precision": 0.9215588308768423,
+    "recall": 0.9126669965363682,
+    "f1": 0.9170913610938471,
+    "roc_auc": 0.9708004748361785,
+    "pr_auc": 0.9734911145732477,
+    "specificity": 0.9223541048466865,
+    "balanced_accuracy": 0.9175105506915273,
+    "mcc": 0.8350619465172123,
+    "fpr": 0.07764589515331355,
+    "fnr": 0.08733300346363186,
+    "tn": 3730,
+    "fp": 314,
+    "fn": 353,
+    "tp": 3689,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.9171407370764284,
+    "precision": 0.9285714285714286,
+    "recall": 0.9037605145967343,
+    "f1": 0.9159979939819458,
+    "roc_auc": 0.9708004748361785,
+    "pr_auc": 0.9734911145732477,
+    "specificity": 0.9305143422354105,
+    "balanced_accuracy": 0.9171374284160725,
+    "mcc": 0.8345781935292257,
+    "fpr": 0.06948565776458951,
+    "fnr": 0.09623948540326571,
+    "tn": 3763,
+    "fp": 281,
+    "fn": 389,
+    "tp": 3653,
+    "threshold": 0.5295724247627861
+  },
+  "resource": {
+    "framework": "scikit-learn + NLTK",
+    "vectorizer": "TF-IDF unigram + normalized POS profile",
+    "pos_features": [
+      "NOUN",
+      "VERB",
+      "ADJ",
+      "ADV",
+      "PRON",
+      "DET",
+      "ADP",
+      "CONJ",
+      "MODAL",
+      "NUM",
+      "OTHER",
+      "token_count_scaled",
+      "mean_token_length_scaled"
+    ],
+    "vocabulary_size": 18390,
+    "train_seconds": 3.511828699999967,
+    "inference_seconds": 0.003596300000026531,
+    "inference_reviews_per_second": 3372632.983875239
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.9110808805342567,
+      "high": 0.9229532525352461,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.9095193346963857,
+      "high": 0.9220111800400796,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9674131997728528,
+      "high": 0.9738114392093838,
+      "n": 1000
+    }
+  }
+}

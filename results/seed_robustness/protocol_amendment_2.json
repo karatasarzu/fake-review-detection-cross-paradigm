@@ -1,0 +1,8 @@
+{
+  "amendment": 2,
+  "forced_precision": {
+    "deberta": "fp32"
+  },
+  "reason": "bf16 training of plain DeBERTa failed at the first step in the pinned environment (masked_fill: value cannot be converted to BFloat16 without overflow); the repeated plain DeBERTa runs therefore use FP32, the precision of the DeBERTa sentiment variant",
+  "recorded_utc": "2026-09-28T14:24:08+00:00"
+}

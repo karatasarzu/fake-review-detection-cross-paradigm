@@ -1,0 +1,47 @@
+{
+  "protocol": "zero_shot_frd_to_opspam",
+  "model": "deberta_v3_sentiment_gated",
+  "seed": 42,
+  "source_threshold": 0.05772783383033802,
+  "default": {
+    "accuracy": 0.500625,
+    "precision": 1.0,
+    "recall": 0.00125,
+    "f1": 0.0024968789013732834,
+    "roc_auc": 0.6980390625,
+    "pr_auc": 0.6681203713299293,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.500625,
+    "mcc": 0.025007816164017767,
+    "fpr": 0.0,
+    "fnr": 0.99875,
+    "tn": 800,
+    "fp": 0,
+    "fn": 799,
+    "tp": 1,
+    "threshold": 0.5
+  },
+  "frd_validation_calibrated": {
+    "accuracy": 0.500625,
+    "precision": 1.0,
+    "recall": 0.00125,
+    "f1": 0.0024968789013732834,
+    "roc_auc": 0.6980390625,
+    "pr_auc": 0.6681203713299293,
+    "specificity": 1.0,
+    "balanced_accuracy": 0.500625,
+    "mcc": 0.025007816164017767,
+    "fpr": 0.0,
+    "fnr": 0.99875,
+    "tn": 800,
+    "fp": 0,
+    "fn": 799,
+    "tp": 1,
+    "threshold": 0.05772783383033802
+  },
+  "inference": {
+    "seconds": 23.2375838,
+    "reviews_per_second": 68.85397439642584,
+    "batch_size": 8
+  }
+}

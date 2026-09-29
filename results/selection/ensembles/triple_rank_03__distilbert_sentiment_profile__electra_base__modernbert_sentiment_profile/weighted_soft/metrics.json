@@ -1,0 +1,78 @@
+{
+  "model": "triple_rank_03__distilbert_sentiment_profile__electra_base__modernbert_sentiment_profile",
+  "method": "weighted_soft",
+  "seed": 42,
+  "selected_threshold": 0.45176655029050194,
+  "validation_default": {
+    "accuracy": 0.986396240415533,
+    "precision": 0.9861523244312562,
+    "recall": 0.9866402770905492,
+    "f1": 0.986396240415533,
+    "roc_auc": 0.9988202508673762,
+    "pr_auc": 0.9988451666502645,
+    "specificity": 0.9861523244312562,
+    "balanced_accuracy": 0.9863963007609027,
+    "mcc": 0.9727926015218055,
+    "fpr": 0.013847675568743818,
+    "fnr": 0.013359722909450767,
+    "tn": 1994,
+    "fp": 28,
+    "fn": 27,
+    "tp": 1994,
+    "threshold": 0.5
+  },
+  "test_default": {
+    "accuracy": 0.9856542171654712,
+    "precision": 0.9856506679861454,
+    "recall": 0.9856506679861454,
+    "f1": 0.9856506679861454,
+    "roc_auc": 0.9990004801219244,
+    "pr_auc": 0.9990017871013837,
+    "specificity": 0.9856577645895154,
+    "balanced_accuracy": 0.9856542162878303,
+    "mcc": 0.9713084325756608,
+    "fpr": 0.014342235410484669,
+    "fnr": 0.014349332013854528,
+    "tn": 3986,
+    "fp": 58,
+    "fn": 58,
+    "tp": 3984,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.986643581498887,
+    "precision": 0.9847215377033022,
+    "recall": 0.9886194952993568,
+    "f1": 0.9866666666666667,
+    "roc_auc": 0.9990004801219244,
+    "pr_auc": 0.9990017871013837,
+    "specificity": 0.9846686449060337,
+    "balanced_accuracy": 0.9866440701026953,
+    "mcc": 0.9732948091400389,
+    "fpr": 0.01533135509396637,
+    "fnr": 0.011380504700643246,
+    "tn": 3982,
+    "fp": 62,
+    "fn": 46,
+    "tp": 3996,
+    "threshold": 0.45176655029050194
+  },
+  "meta": {
+    "members": [
+      "distilbert_sentiment_profile",
+      "electra_base",
+      "modernbert_sentiment_profile"
+    ],
+    "weights": {
+      "distilbert_sentiment_profile": 0.15,
+      "electra_base": 0.4,
+      "modernbert_sentiment_profile": 0.45
+    },
+    "protocol": "frd",
+    "selection_data": "validation_only",
+    "triple_rank": 3,
+    "weight_search_step": 0.05,
+    "method": "weighted_soft",
+    "selected_threshold": 0.45176655029050194
+  }
+}

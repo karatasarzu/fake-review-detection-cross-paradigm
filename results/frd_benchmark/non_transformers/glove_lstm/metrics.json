@@ -1,0 +1,103 @@
+{
+  "model": "glove_lstm",
+  "paper_name": "GloVe + LSTM",
+  "paradigm": "Deep Learning",
+  "representation": "Pretrained GloVe initialization",
+  "seed": 42,
+  "validation_default": {
+    "accuracy": 0.9468216670789018,
+    "precision": 0.9551411290322581,
+    "recall": 0.9376546264225631,
+    "f1": 0.9463171036204744,
+    "roc_auc": 0.9884154067748581,
+    "pr_auc": 0.9894240659831464,
+    "specificity": 0.9559841740850643,
+    "balanced_accuracy": 0.9468194002538137,
+    "mcc": 0.8937925741719208,
+    "fpr": 0.044015825914935705,
+    "fnr": 0.06234537357743691,
+    "tn": 1933,
+    "fp": 89,
+    "fn": 126,
+    "tp": 1895,
+    "threshold": 0.5
+  },
+  "selected_threshold": 0.5634922683238983,
+  "test_default": {
+    "accuracy": 0.945955973287163,
+    "precision": 0.9541446208112875,
+    "recall": 0.9369124195942603,
+    "f1": 0.9454500062414181,
+    "roc_auc": 0.9875176864485709,
+    "pr_auc": 0.9889293293551717,
+    "specificity": 0.9549950544015826,
+    "balanced_accuracy": 0.9459537369979214,
+    "mcc": 0.8920568825940537,
+    "fpr": 0.04500494559841741,
+    "fnr": 0.06308758040573974,
+    "tn": 3862,
+    "fp": 182,
+    "fn": 255,
+    "tp": 3787,
+    "threshold": 0.5
+  },
+  "test_calibrated": {
+    "accuracy": 0.94607964382884,
+    "precision": 0.9590122199592668,
+    "recall": 0.9319643740722414,
+    "f1": 0.9452948557089084,
+    "roc_auc": 0.9875176864485709,
+    "pr_auc": 0.9889293293551717,
+    "specificity": 0.9601879327398615,
+    "balanced_accuracy": 0.9460761534060514,
+    "mcc": 0.8925134072388426,
+    "fpr": 0.03981206726013848,
+    "fnr": 0.06803562592775854,
+    "tn": 3883,
+    "fp": 161,
+    "fn": 275,
+    "tp": 3767,
+    "threshold": 0.5634922683238983
+  },
+  "resource": {
+    "parameters_total": 2133389,
+    "parameters_trainable": 2133389,
+    "framework": "PyTorch",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "max_epochs": 10,
+    "early_stopping_patience": 2,
+    "best_checkpoint_criterion": "validation_f1_at_0.5",
+    "best_epoch": 5,
+    "best_validation_f1": 0.9463171036204744,
+    "train_seconds": 49.128615399999944,
+    "inference_seconds": 0.6457835999999588,
+    "inference_reviews_per_second": 18781.833419121784,
+    "device": "cuda",
+    "peak_vram_gb": 0.2367238998413086,
+    "embedding": "GloVe_pretrained_trainable",
+    "source": "gensim:glove-wiki-gigaword-100",
+    "dim": 100,
+    "covered": 18851,
+    "vocab": 20153
+  },
+  "bootstrap_95ci": {
+    "accuracy": {
+      "low": 0.9411328221617611,
+      "high": 0.9509058867177839,
+      "n": 1000
+    },
+    "f1": {
+      "low": 0.9400941363018718,
+      "high": 0.9502940891253383,
+      "n": 1000
+    },
+    "roc_auc": {
+      "low": 0.9855965206117888,
+      "high": 0.9893359703490587,
+      "n": 1000
+    }
+  }
+}
